@@ -1,26 +1,32 @@
+/* עיצוב כללי */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a; /* רקע כהה */
+  color: #e2e8f0; /* טקסט בהיר */
+  margin: 0;
+  padding: 20px;
 }
-header {
-    background-color: #222;
-    color: white;
-    padding: 20px;
-}
-main {
-    padding: 40px;
-}
-footer {
-    background-color: #222;
-    color: white;
-    padding: 10px;
-    font-size: 14px;
-}
-button {
-    padding: 10px 20px;
-    font-size: 16px;
 
+/* כותרת עליונה ותחתונה */
+header, footer {
+  background: #1e293b;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* כפתור */
+button {
+  background: #22c55e;
+  color: #0b1020;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #16a34a;
 }
