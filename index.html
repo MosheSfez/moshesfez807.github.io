@@ -1,22 +1,37 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="he" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>האתר שלי</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>האתר שלי</title>
+
+  <!-- קובץ העיצוב — נתיב מוחלט עם שם המאגר -->
+  <link rel="stylesheet" href="/moshesfez807.github.io/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>ברוך הבא לאתר שלי</h1>
-    </header>
-    <main>
-        <p>זה אתר שבניתי בעצמי, עם שליטה מלאה בקוד.</p>
-        <button onclick="sayHello()">לחץ עליי</button>
-    </main>
-    <footer>
-        <p>© 2025 כל הזכויות שמורות</p>
-    </footer>
-    <script src="js/script.js"></script>
+  <header>
+    <h1>ברוך הבא לאתר שלי</h1>
+  </header>
+
+  <main>
+    <p>זה אתר שבניתי בעצמי, עם שליטה מלאה בקוד.</p>
+    <button onclick="sayHello()">לחץ עליי</button>
+  </main>
+
+  <footer>
+    <p>© 2025 כל הזכויות שמורות</p>
+  </footer>
+
+  <!-- קובץ הסקריפט — נתיב מוחלט עם שם המאגר -->
+  <script src="/moshesfez807.github.io/js/script.js"></script>
+
+  <!-- בדיקה מהירה שה־JS נטען -->
+  <script>
+    (function () {
+      if (!window.sayHello) {
+        console.warn("script.js לא נטען. בדוק את הנתיב או המתן לרענון GitHub Pages.");
+      }
+    })();
+  </script>
 </body>
 </html>
