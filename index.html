@@ -4,17 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>האתר שלי</title>
-
-  <!-- קובץ העיצוב -->
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
   <header>
     <h1>ברוך הבא לאתר שלי</h1>
+    <nav>
+      <a href="#about">אודות</a>
+      <a href="#gallery">גלריה</a>
+      <a href="#contact">צור קשר</a>
+    </nav>
   </header>
 
   <main>
-    <p>זה אתר שבניתי בעצמי, עם שליטה מלאה בקוד.</p>
+    <section id="about">
+      <h2>אודות</h2>
+      <p>זה אתר שבניתי בעצמי, עם שליטה מלאה בקוד, עיצוב מותאם אישית ופונקציות אינטראקטיביות.</p>
+    </section>
+
+    <section id="gallery">
+      <h2>גלריה</h2>
+      <div class="gallery">
+        <img src="images/pic1.jpg" alt="תמונה 1">
+        <img src="images/pic2.jpg" alt="תמונה 2">
+        <img src="images/pic3.jpg" alt="תמונה 3">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>צור קשר</h2>
+      <form onsubmit="sendMessage(event)">
+        <label>שם: <input type="text" id="name"></label>
+        <label>הודעה: <textarea id="message"></textarea></label>
+        <button type="submit">שלח</button>
+      </form>
+    </section>
+
     <button onclick="sayHello()">לחץ עליי</button>
   </main>
 
@@ -22,7 +47,6 @@
     <p>© 2025 כל הזכויות שמורות</p>
   </footer>
 
-  <!-- קובץ הסקריפט -->
-  <script src="js/script.js?v=3"></script>
+  <script src="js/script.js?v=4"></script>
 </body>
 </html>
